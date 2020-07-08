@@ -5,7 +5,7 @@ import Detail from '../routes/Detail';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Route exact path="/" component={Home} />
       <Route path="/:id" component={Detail} /> 
     </Router>
