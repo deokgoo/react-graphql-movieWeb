@@ -68,7 +68,6 @@ export default () => {
         <Present>present deok9</Present>
       </Header>
       <PosterBox>
-        testHome
         {loading && <Loading>Loading...</Loading>}
         {!loading && data.ranking && data.ranking.map(m => <Movie key={m.id} {...m} />)}
       </PosterBox>
