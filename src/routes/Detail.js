@@ -15,6 +15,7 @@ const GET_MOVIES_FROM_ID = gql`
 
 export default () => {
   const { id } = useParams();
+  if(!id) id = 1234;
   const { loading, data } = useQuery(GET_MOVIES_FROM_ID, {
     variables: { id: parseInt(id) }
   });
