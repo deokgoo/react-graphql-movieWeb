@@ -60,6 +60,7 @@ const PosterBox = styled.div`
 
 export default () => {
   const { loading, data } = useQuery(GET_MOVIES);
+  console.log(process.env.REACT_APP_APPOLLO_SERVER);
   return (
     <Container>
       <Header>
