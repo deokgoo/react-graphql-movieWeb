@@ -12,4 +12,4 @@ LazyLoading을 SPA에서의 구현 방식을 고민하던 중
 - Netlify
 
 # Screenshot
-<img src="https://github.com/deokgoo/react-graphql-movieWeb/blob/main/screenshot/screenshot1.png?raw=true" width="400px"></img>
+<img src="https://github.com/deokgoo/react-graphql-movieWeb/blob/master/screenshot/screenshot1.png?raw=true" width="400px"></img>
