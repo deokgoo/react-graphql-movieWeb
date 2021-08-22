@@ -58,9 +58,9 @@ const PosterBox = styled.div`
   align-items: center;
 `
 
-export default () => {
+const Home = () => {
   const { loading, data } = useQuery(GET_MOVIES);
-  console.log(process.env.REACT_APP_APPOLLO_SERVER);
+  console.log(loading, data);
   return (
     <Container>
       <Header>
@@ -70,8 +70,10 @@ export default () => {
       </Header>
       <PosterBox>
         {loading && <Loading>Loading...</Loading>}
-        {!loading && data.ranking && data.ranking.map(m => <Movie key={m.id} {...m} />)}
+        {!loading && data?.ranking?.map(m => <Movie key={m.id} {...m} />)}
       </PosterBox>
     </Container>
   )
 }
+
+export default Home;

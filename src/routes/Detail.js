@@ -13,7 +13,7 @@ const GET_MOVIES_FROM_ID = gql`
   }
 `
 
-export default () => {
+const Detail = () => {
   const { id } = useParams();
   const { loading, data } = useQuery(GET_MOVIES_FROM_ID, {
     variables: { id: parseInt(id) }
@@ -25,3 +25,5 @@ export default () => {
     </>
   )
 };
+
+export default Detail;

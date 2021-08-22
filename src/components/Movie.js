@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Image = styled.div`
@@ -9,10 +8,12 @@ const Image = styled.div`
   margin-bottom: 20px;
 `;
 
-export default ({ id, original_title: title, poster_path: poster}) => {
+const Movie = ({ id, original_title: title, poster_path: poster}) => {
   return (
     <Image>
-      <img src={poster} height="100%"></img>
+      <img src={poster} height="100%" alt={title}></img>
     </Image>
   );
 }
+
+export default Movie;
