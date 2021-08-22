@@ -32,7 +32,6 @@ const Movie = ({ id, original_title: title, poster_path: poster, idx}) => {
   return (
     <PostContainer ref={ref}>
       <Title>{idx+1}. {title}</Title>
-      {`something ${inView}`}
       <Image>
         {inView && !posterTrigger ? inViewHandler():<></>}
         {posterTrigger ?
