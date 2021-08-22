@@ -19,7 +19,7 @@ const Container = styled.div`
   background-color: black;
 `
 const Header = styled.div`
-  height: 300px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   grid-gap: 2em;
@@ -28,10 +28,6 @@ const Header = styled.div`
   font-weight: bold;
   align-items: center;
   justify-content: center;
-`
-
-const Title = styled.h1`
-  font-size: 60px;
 `
 
 const Subtitle = styled.h3`
@@ -64,13 +60,12 @@ const Home = () => {
   return (
     <Container>
       <Header>
-        <Title>Apollo 2020</Title>
         <Subtitle>Movie Ranking Web</Subtitle>
         <Present>present deok9</Present>
       </Header>
       <PosterBox>
         {loading && <Loading>Loading...</Loading>}
-        {!loading && data?.ranking?.map(m => <Movie key={m.id} {...m} />)}
+        {!loading && data?.ranking?.map((m, idx) => <Movie key={m.id} {...m} idx={idx} />)}
       </PosterBox>
     </Container>
   )
