@@ -13,3 +13,6 @@ LazyLoading을 SPA에서의 구현 방식을 고민하던 중
 
 # Screenshot
 <img src="https://github.com/deokgoo/react-graphql-movieWeb/blob/master/screenshot/screenshot1.png?raw=true" width="400px"></img>
+
+# todo
+- [ ] typescript
